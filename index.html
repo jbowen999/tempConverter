@@ -3,24 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Submit Example</title>
+    <title>Temperature Converter</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        background-color: rgb(100, 100, 100);
+      }
+
+      .container {
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        align-self: auto;
+
+        flex-direction: column;
+      }
+
+      h1,
+      p {
+        color: darkorange;
+        margin: 5vw;
+      }
+    </style>
   </head>
   <body>
-    <h1>Temperature Converter</h1>
-    <form id="form">
-      <input
-        type="number"
-        id="celsius"
-        name="celsius"
-        placeholder="Temperature"
-      />
-      <select name="temperature-select" id="temperature-select">
-        <option value="celsius">Celsius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-      </select>
-      <button type="submit">Convert</button>
-    </form>
-    <p id="result"></p>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <form id="form">
+        <input
+          type="number"
+          id="celsius"
+          name="celsius"
+          placeholder="Temperature"
+        />
+        <select name="temperature-select" id="temperature-select">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <button type="submit">Convert</button>
+      </form>
+      <p id="result"></p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
